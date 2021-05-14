@@ -11,6 +11,12 @@ use Illuminate\Database\Eloquent\Relations\BelongsTo;
  */
 class User2fa extends Model
 {
+    protected $fillable = [
+        'google2fa_enable',
+        'google2fa_secret',
+        'recovery',
+    ];
+
     /**
      * @var string
      */
