@@ -15,6 +15,7 @@ class User2fa extends Model
         'google2fa_enable',
         'google2fa_secret',
         'recovery',
+        'path',
     ];
 
     /**
