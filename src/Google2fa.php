@@ -143,4 +143,9 @@ class Google2fa extends Tool
 
         return view('google2fa::authenticate', $data);
     }
+
+    public function menu(\Illuminate\Http\Request $request)
+    {
+        return;
+    }
 }
