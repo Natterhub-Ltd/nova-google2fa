@@ -51,10 +51,8 @@ class Google2fa extends Tool
 
         $google2fa = new G2fa;
 
-        $google2fa_url = Url::generateGoogleQRCodeUrl(
-            'https://chart.googleapis.com/',
-            'chart',
-            'chs=200x200&chld=M|0&cht=qr&chl=',
+        $google2fa_url = sprintf(
+            'https://quickchart.io/qr?text=%s&size=200',
             $google2fa->getQRCodeUrl(config('app.name'), auth()->user()->email, auth()->user()->user2fa->google2fa_secret)
         );
 
@@ -72,10 +70,8 @@ class Google2fa extends Tool
     {
         $google2fa = new G2fa;
 
-        $google2fa_url = Url::generateGoogleQRCodeUrl(
-            'https://chart.googleapis.com/',
-            'chart',
-            'chs=200x200&chld=M|0&cht=qr&chl=',
+        $google2fa_url = sprintf(
+            'https://quickchart.io/qr?text=%s&size=200',
             $google2fa->getQRCodeUrl(config('app.name'), auth()->user()->email, auth()->user()->user2fa->google2fa_secret)
         );
 
