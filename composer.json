@@ -8,13 +8,13 @@
     "license": "MIT",
     "require": {
         "php": "^8.0",
-        "bacon/bacon-qr-code": "^2.0",
-        "pragmarx/google2fa": "^7.0",
+        "bacon/bacon-qr-code": "^3.0",
+        "pragmarx/google2fa": "^8.0",
         "pragmarx/google2fa-laravel": "^2.1",
         "pragmarx/recovery": "^0.2.0"
     },
     "require-dev": {
-        "laravel/nova": "^4.0"
+        "laravel/nova": "^5.0"
     },
     "autoload": {
         "psr-4": {
